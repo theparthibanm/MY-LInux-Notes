@@ -16,6 +16,7 @@ To check the default permission of a file/folder
 # ls -l
 # ll
 
+
 -rw-r--r-- 1 root root 292 Dec  9 12:59 testfile1
 drwxr-xr-x 2 root root 54 Dec  8 16:10 secure
 
@@ -107,6 +108,8 @@ a		all
 Default permission for files/Directory
 ----------------------------------------
 
+old version:
+-----------
 normal user
 775 - directory
 664 - file
@@ -115,6 +118,7 @@ root
 755 - directory
 644 - file
 
+new version:
 
 directory
 -------------
