@@ -11,6 +11,7 @@ Types of Special permissions
 3.Stickybit - 1
 
 suid	sgit	stickybit
+
 rwx 	r-x 	r-x
   s   	s 	  t
 rws		r-s		r-t
