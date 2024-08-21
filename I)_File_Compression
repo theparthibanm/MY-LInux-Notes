@@ -114,7 +114,7 @@ tar -cvzf etc-backup-14-09-12.tar.gz /etc
 
 Create tar.bz2 Archive File in Linux  (Note: tar.bz2 and tbz is similar to tb2).
 
-# tar -cvfj etc-backup.tar.bz2 /etc
+# tar -cvjf etc-backup.tar.bz2 /etc
 
 
 4. Untar tar Archive File in Linux (tar,tar.gz,tar.bz2)
