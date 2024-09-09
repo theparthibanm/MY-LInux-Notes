@@ -205,21 +205,21 @@ To change the default ownership of a file/directory
 =====================================================
 To change both
 ===============
-#chown <owner>:<group> <files/directory>
+#chown <newowner>:<newgroup> <files/directory>
 
-#chown -R <owner>:<group> <files/directory>
+#chown -R <newowner>:<newgroup> <files/directory>
 
-#chown <owner>: <files/directory>
+#chown <newowner>: <files/directory>
 
 
 owner only
 ------------
-#chown <owner> <files/directory>
+#chown <newowner> <files/directory>
 
 only group
 -----------
-#chown :<group> <files/directory>
-#chgrp <group> <files/directory>
+#chown :<newgroup> <files/directory>
+#chgrp <newgroup> <files/directory>
 
 chmod - command to set permission to files/directoreis
 chown - command to change owner and group name of files/directories
