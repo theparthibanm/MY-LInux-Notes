@@ -134,15 +134,21 @@ grep
 ====
 cat /etc/passwd|grep balaji
 
-cat /etc/passwd|grep -i balaji
+cat /etc/passwd|grep -i balaji   # Case-insensitive search
 
-cat /etc/passwd|grep -v balaji
+cat /etc/passwd|grep -v balaji   # -v = invert match (show lines that do not contain "balaji") Displays all entries except the user balaji.
 
-cat /etc/passwd|grep -A2 balaji
+cat /etc/passwd|grep -A2 balaji  # -A2 = After 2 lines Shows the line containing balaji and the next 2 lines.
 
-cat /etc/passwd|grep -B2 balaji
+cat /etc/passwd|grep -B2 balaji  # -B2 = Before 2 lines Shows the line containing balaji and the previous 2 lines.
 
-# cat /etc/passwd|grep -E 'balaji|hari'
+cat /etc/passwd|grep -E 'balaji|hari'  # Multiple search
+
+cat /etc/passwd|grep -C2 balaji /etc/passwd   # Show 2 lines before and after
+
+cat /etc/passwd|grep -n balaji /etc/passwd   # Show line numbers
+
+cat /etc/passwd|grep '^balaji' /etc/passwd   # Match username starting with balaji
 
 Copy File to Another Directory in Linux
 =======================================
@@ -193,11 +199,11 @@ Rename directory
 clear
 echo ' This test file' > file1
 
-uname
-ifconfig
+uname  -- shows device details
+ifconfig  
 df –h
 
 command;command; 
-whoami
-who am i
+whoami -- shows user details
+who -- 
 w  -- full detailed users
