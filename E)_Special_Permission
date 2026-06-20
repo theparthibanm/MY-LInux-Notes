@@ -10,7 +10,7 @@ Types of Special permissions
 2.Setgid (SGID) - 2
 3.Stickybit - 1
 
-suid	sgit	stickybit
+suid	sgid	stickybit
 ====  ====  =========
 rwx 	r-x 	r-x
   s   	s 	  t
@@ -58,12 +58,14 @@ executing that command (file) will inherit the permissions of the owner of the f
 [root@machine-1 ~]# ls -l /usr/bin/sudo
 ---s--x--x. 1 root root 185456 Aug 26  2021 /usr/bin/sudo
 
+Rename username -->
 useradd
 userdel
 passwd
 chage
 fdisk
 which ls
+what is  useradd --> definition
 
 ls -l /root
 
@@ -100,7 +102,8 @@ The SetGID permission displays as an “s” in the group executable field. Its 
 STICKY BIT
 ==========
 Sticky Bit :- If the directory permission have the sticky bit permission set, then the file can be deleted only by the REAL owner of the file/directory or the root user. This special permission
-prevents to delete other user’s file from public directories. Its numeric value is 1.
+prevents to delete other user’s file from public directories. Its numeric value is 1. 
+But root user can delete anything.
 
 #chmod 1755 <file/dirname>
 #chmod o+t <file/dirname>
