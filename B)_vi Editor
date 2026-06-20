@@ -155,7 +155,8 @@ O --> inserts the text one line before current cursor position
 :5d --> delete 5th line
 :$d --> delete last line
 :3,6d --> delet 3rd line to 6th line
-:$ --> place the cursor in the lat line
+:$ --> place the cursor in the last line
+:^ --> place the cursor in the begining of the line
 
 
 TO search a word and replace it with new word
