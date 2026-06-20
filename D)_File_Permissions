@@ -183,16 +183,16 @@ Normal users
 file
 
  666
--022
+-002
 ----- 
- 644
+ 664
 
 Directory
 
  777
--022
+-002
 ------
- 755
+ 775
 
 
 To chage umask value for individual user we need to put entry on .bash_profile
@@ -209,12 +209,13 @@ To change both
 
 #chown -R <newowner>:<newgroup> <files/directory>
 
-#chown <newowner>: <files/directory>
-
 
 owner only
 ------------
 #chown <newowner> <files/directory>
+
+#chown <newowner>: <files/directory>
+
 
 only group
 -----------
