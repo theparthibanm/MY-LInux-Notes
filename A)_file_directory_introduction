@@ -200,4 +200,4 @@ df –h
 command;command; 
 whoami
 who am i
-w
+w  -- full detailed users
