@@ -53,4 +53,5 @@ To check the list of inode numbers, use the following command:
 ===============================================================
 
 #ls -li
+#df -i   -->to check the inode usage
 #stat <file/dir>
