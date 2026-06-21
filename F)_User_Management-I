@@ -26,8 +26,10 @@ There are main user and group administration files:
 /etc/shadow 
 /etc/gshadow
 
-/etc/login.defs
-usedadd -D
+/etc/login.defs   --> login related information
+
+usedadd -D   --> D default details of useradd
+
 # cat /etc/default/useradd
 
 To see user related logs
@@ -39,14 +41,16 @@ To see user related logs
 fields in below files
 ==========================
 
-/etc/passwd - Username: User's password mask : UID : GID : User Comment : home directory of user: Default log-in shell
+/etc/passwd - Username: User's password mask : UID : GID : User Comment : home directory of user: Default log-in shell --> 7
 
-/etc/shadow - Username: Encrypted password:Last password change:Minimum :Maximum :Warning days:Inactive:Expire:reserverd
+/etc/shadow - Username: Encrypted password:Last password change:Minimum :Maximum :Warning days:Inactive:Expire:reserverd --> 9
 
-/etc/group - Groupname:password:GID:Members of group
+parthi:$6$EcMnuejg8JF6Kq25$cdL4QluNIf/sp5y3Vn6.Q4FYj56YbiIHs1eGAAmwtT7WrTzbyxeHFxpVGcENFoND9OeOKHYdwtvVozVg9l4ek/:20625:0:99999:7:::
 
-/etc/gshadow - Groupname:group password:group id admin:Members of group
 
+/etc/group - Groupname:password:GID:Members of group --> 4
+
+/etc/gshadow - Groupname:group password:group id admin:Members of group --> 4
 
 
 #ls -l /home
@@ -64,6 +68,10 @@ To see the information of users
 To check the user's ID or UID with Group ID
 ==============================
 #id username
+
+[root@localhost ~]# id parthi
+uid=1000(parthi) gid=1000(parthi) groups=1000(parthi),10(wheel)
+
 #id -un username
 #id -gn username
 
