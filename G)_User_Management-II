@@ -6,7 +6,7 @@ To add a user into a group
 useradd with predefined parameter
 ======================================= 
 useradd -u 2000 -g 3000 -c 'test user' -d /home/test1 -s /bin/sh username
-useradd -M
+useradd -M #The -M option tells useradd not to create a home directory for the user.
 useradd -e '2021-12-25' username
 
 balaji:x:1001:1001::/home/balaji:/bin/bash
@@ -23,7 +23,6 @@ usermod
 To rename user's account name
 ==============================
 #usermod -l newname oldname
-
 
 To change user's UID
 ====================
@@ -94,6 +93,8 @@ To set the user's account expiry date
 To forcefully change the user's password immediately after first login
 ====================================================
 # chage -d 0 username
+# chage -e  username  --> enforce
+
 
 To see the information of groups
 ==============================
