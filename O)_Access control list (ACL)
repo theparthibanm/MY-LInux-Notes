@@ -32,7 +32,7 @@ setfacl -x u:username /secure
 
 To remove ACL on a file for a specific group
 =============================
-setfacl -x g:username /secure
+setfacl -x g:groupname /secure
 
 
 To remove all ACL 
