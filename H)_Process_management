@@ -15,14 +15,14 @@ Background Processes: They run in the background and usually do not need user in
 To list the processes
 =====================
 # top
-#ps ­efa
-#ps -ef
+#ps ­efa  --> all --> f - full format e --> edit list
+#ps -ef --> to list process
 
 
 To list all running processes
 ============================
 
-#ps ­aux |less
+#ps ­aux |less --> x - without terminal a- all u -user
 
 TO list a specific user's processes
 ===================================
@@ -42,16 +42,10 @@ USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
 # ps ­eo user,cpu,cmd ­­­­> option ­e is used for editing and option ­o is used to user define.
 #  ps eo uid,user,pid,ppid,stat,cpu,cmd
 
-
-
-
-
-
 fg
 bg
 
 jobs
-
 
 
 #ps 
@@ -72,13 +66,16 @@ For example:
 
 [root@machine1 ~]# sleep 1000 &
 [1] 1971
+
 [root@machine1 ~]# ps -f
 UID          PID    PPID  C STIME TTY          TIME CMD
 root        1589    1588  0 09:25 pts/0    00:00:00 -bash
 root        1971    1589  0 09:26 pts/0    00:00:00 sleep 1000
 root        1972    1589  0 09:26 pts/0    00:00:00 ps -f
+
 [root@machine1 ~]# pidof sleep
 1971
+
 [root@machine1 ~]# pstree 1589
 bash---pstree
      +-sleep
@@ -87,7 +84,7 @@ bash---pstree
 
 Child Processes:
 =================
-The processes which gets created by another process it'ns parent process known as child process.
+The processes which gets created by another process it's parent process known as child process.
 
 In our above example, the sleep process with PID 1971 is a child process of the bash process with PID 1589.
 
@@ -146,7 +143,7 @@ Z: Zombie
 
 TASK_RUNNING(R)		- task (process) currently running
 TASK_INTERRUPTABLE (S)	- process is sleeping but can be woken up (interrupted)
-TASK_UNINTERRUPTABLE(D)	- process is sleeping but can not be woken up (interrupted)
+TASK_UNINTERRUPTABLE(D)	- process is sleeping but can not be woken up (uninterrupted)
 TASK_ZOMBIE	(Z)		- process terminated but its status was not collected (it was not waited for)
 TASK_STOPPED(T)		- process stopped by a debugger or job control
 
@@ -172,8 +169,8 @@ su -  mahesh
 #pkill sleep
 #killall
 
-#kill -l
-#kill -9
+#kill -l --> 
+#kill -9 --> 
 
 
 #ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:
@@ -258,11 +255,6 @@ To schedule priorities.
 # nice ­-n ­7 cat
 # nice -n -20 seq 100000000000000000000 > /dev/null
 
-
-
-
-
-
 top
 =====
 
@@ -312,9 +304,11 @@ uptime
 w
 df -h 
 free -h
+free -m
 cat /proc/cpuinfo
 cat /proc/meminfo
-
+nproc
+lscpu
 
 Check CPU core
 ================
