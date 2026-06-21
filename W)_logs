@@ -36,4 +36,6 @@
 12. */var/log/wtmp*
     - *Explanation*: Records login and logout events. This binary file can be viewed using the last command.
 
+logrotate command
+
 These logs provide valuable information for monitoring system performance, identifying issues, and ensuring security. Regularly reviewing these logs can help maintain the health and security of a CentOS Linux system.
