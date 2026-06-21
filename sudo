@@ -51,22 +51,12 @@ Change Your Interactive Shell
 sudo -i
 
 
-
-
-
-
 List User Privileges
 sudo -l (OR) sudo --list
 
 
 
-
-
-
 cat /var/log/secure	
-
-
-
 
 
 
@@ -104,3 +94,5 @@ balaji  ALL=(ALL)       NOPASSWD: PROCESSES #,DELEGATING
 user1 ALL=(ALL) NOPASSWD: ALL
 
 user2 ALL=(ALL) NOPASSWD: /bin/echo /bin/ls
+
+add to wheel group --> user can get the root previlages
