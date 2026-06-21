@@ -112,6 +112,10 @@ To create group
 ==================
 #groupadd groupname
 
+To remove group
+==================
+#groupdel groupname
+
 To see the information of groups
 ==============================
 # cat /etc/group
@@ -130,9 +134,6 @@ change users primary group
 ==========================
 usermod -g groupname/id username
 
-To remove group
-==================
-#groupdel groupname
 
 check the password status
 =============================
