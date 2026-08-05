@@ -204,6 +204,6 @@ ifconfig
 df –h
 
 command;command; 
-whoami -- shows user details
-who -- 
+whoami -- shows user details with login time
+who -- show user only
 w  -- full detailed users
